@@ -1,1 +1,22 @@
 This is a demo of html5 native Drag n Drop
+
+dragstart
+Fired on an element when a drag is started. The user is requesting to drag the element the dragstart event is fired at. During this event, a listener would set information such the drag data and image to be associated with the drag. For information about this, see Starting a Drag Operation.
+
+dragenter
+Fired when the mouse is first moved over an element while a drag is occurring. A listener for this event should indicate whether a drop is allowed over this location. If there are no listeners, or the listeners perform no operations, then a drop is not allowed by default. This is also the event to listen to if you want to provide feedback that a drop is allowed such as displaying a highlight or insertion marker. For information about this, see Specifying Drop Targets.
+
+dragover
+This event is fired as the mouse is moved over an element when a drag is occurring. Much of the time, the operation that occurs during a listener will be the same as the dragenter event. For information about this, see Specifying Drop Targets.
+
+dragleave
+This event is fired when the mouse leaves an element while a drag is occurring. Listeners should remove any highlighting or insertion markers used for drop feedback.
+
+drag
+This event is fired at the source of the drag, that is, the element where dragstart was fired, during the drag operation.
+
+drop
+The drop event is fired on the element where the drop was occured at the end of the drag operation. A listener would be responsible for retrieving the data being dragged and inserting it at the drop location. This event will only fire if a drop is desired. It will not fire if the user cancelled the drag operation, for example by pressing the Escape key, or if the mouse button was released while the mouse was not over a valid drop target. For information about this, see Performing a Drop.
+
+dragend
+The source of the drag will receive a dragend event when the drag operation is complete, whether it was successful or not. See Finishing a Drag for more information.

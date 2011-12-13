@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Example #4: a dragable object with a drop target</title>
+ 		<script type="text/javascript" src="js/EventHelpers.js"></script>
+		<script type="text/javascript" src="js/drag_step4.js"></script>
+      	<link rel="stylesheet" type="text/css" media="screen" href="css/drag.css" />
+   </head>
+   <body>
+	<section id="demo">
+      <h1>Step #4: a dragable object with a drop target</h1>
+      <p>Try to drag the red box around and dropping it in the target object.</p>
+      <p><strong>Is dragging:</strong> <span id="dragEventNotice">no</span>
+     <p id="eventLog"><strong>Event now firing:</strong><br /><span id="eventNotice"></span></p>
+	 <img id="toDrag" draggable="true" src="img/banana.jpg" alt="Banana" />
+	 <div id="dropTarget">This is a "target" object</div>
+   </section>
+</body>
+</html>

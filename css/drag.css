@@ -1,0 +1,83 @@
+body {
+	font: 16px "Helvetica Neue",Helvetica,sans-serif;
+	background: none repeat scroll 0 0 #EDEDEC;
+}
+
+#demo{
+	  background: #FFF;
+		border-radius: 10px 10px 10px 10px;
+    border-top: 1px solid #FFFFFF;
+    margin: 0 auto;
+    padding: 10px;
+    width: 600px;
+}
+
+p#toDrag, div#toDrag {
+	font-size: 20px;
+	border: solid 1px blue;
+	background: white;
+	width: 100px;
+	height: 100px;
+	padding: 1em;
+    color: #000099;
+    position: relative;
+		background-color: #CCC;
+		cursor: move;
+		display: inline-block;
+}
+
+p#notToDrag{
+		font-size: 20px;
+		border: solid 1px blue;
+		background: white;
+		width: 100px;
+		height: 100px;
+		padding: 1em;
+	    color: #000099;
+	    position: relative;
+			background-color: #CCC;
+			display: inline-block;
+}
+
+code {
+	font-size: 1.3em;
+}
+
+img#toDrag {
+	border: none;
+}
+
+
+#dropTarget {
+	color: dotted 1px #999;
+	border: dotted 1px #999;
+	height: 170px;
+	width: 600px;
+	background: #CCC;
+	/* 
+	 * Must be relative or absolute in order for 
+	 * DragDropHelpers.getEventCoords() to work correctly in Firefox. 
+	 */
+	position: relative;
+}
+
+.caption {
+	text-align: center;
+	margin-top: 0.3em;
+}
+
+#toDrag, #dropTarget, fieldset {
+	
+}
+
+#eventLog {
+
+}
+
+#eventNotice {
+	display: block;
+	width: 600px;
+	height: 40px;
+	border: solid 1px black;
+	margin-bottom: 2em;
+}

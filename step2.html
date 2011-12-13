@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>	
+		<title>Example #2: a draggable object with events attached </title>
+		<!-- <script type="text/javascript" src="js/EventHelpers.js"></script>
+		<script type="text/javascript" src="js/drag_step2.js"></script> -->
+	<script type="text/javascript">	
+		function dragStart(ev) {
+			document.getElementById('eventNotice').innerHTML = "Drag Event started."
+		    return true;
+		}
+		function dragEnd(ev) {
+		    document.getElementById('eventNotice').innerHTML = "Drag Event Complete."
+		    return true
+		}
+		
+		function dragEvent(ev) {
+			document.getElementById('eventNotice').innerHTML = "Currently dragging. ";
+		}
+		
+	</script>	
+		<link rel="stylesheet" type="text/css" media="screen" href="css/drag.css" />
+	</head>
+	
+	<body>
+		<section id="demo">
+			<h1>Step #2: Drag Events</h1>
+			<p>Try to drag the red box around.  This page will tell you if the 
+				object is currently dragging, and will log all <code>dragstart</code>
+				and <code>dragstop</code> events</p>
+			<p><strong>Is dragging:</strong> <span id="dragEventNotice">No.</span>
+			<p id="eventLog"><strong>Event now firing:</strong><br /><span id="eventNotice"></span>
+			<p  id="toDrag" draggable="true" ondragstart="return dragStart(event)" ondragend="return dragEnd(event)">This text is draggable.</p> <br/>
+		<a href="./step3.html">On to Step 3</a>
+	</body>
+</html>
